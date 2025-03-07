@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" style="display: none;">NLCI</h1>
+    <button id="button">show</button>
+    <button id="button1">hide</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $("#heading").css("color","red").slideUp(2000);
+  });
+  $("#button").click(function(){
+    $("#heading").css("color","green").slideDown(2000);
+  });
+});
+    </script>
+</body>
+</html>

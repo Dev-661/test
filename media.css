@@ -1,0 +1,107 @@
+@media (min-width: 768px) and (max-width: 1113px) {
+    .logo3{
+        margin-left: 0; /* Left se koi margin na ho */
+        padding-left: 0; /* Agar padding hai to remove karein */
+    }
+    .circle-container {
+        width: 250px; /* Chhoti screens pe adjust karega */
+    }
+    @keyframes moveToPosition {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: 90%; /* Center on small screens too */
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    @keyframes shakeCircle {
+        0%, 100% {
+            transform: translate(-50%, -50%);
+        }
+        25% {
+            transform: translate(-55%, -50%) ; /* Kam shake karega */
+        }
+        50% {
+            transform: translate(-45%, -50%) ;
+        }
+        75% {
+            transform: translate(-55%, -50%) ;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .top{
+        margin-left:11px;
+    }
+    .top1{
+        margin-left:-160px;
+        width:100%;
+        font-size:18px;
+    }
+    .circle-container{
+        margin-top: 250px;
+        margin-left: -50px;
+       width:200px;
+    }
+    @keyframes moveToPosition {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: 50%; /* Center on small screens too */
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    @keyframes shakeCircle {
+        0%, 100% {
+            transform: translate(-50%, -50%);
+        }
+        25% {
+            transform: translate(-55%, -50%) ; /* Kam shake karega */
+        }
+        50% {
+            transform: translate(-45%, -50%) ;
+        }
+        75% {
+            transform: translate(-55%, -50%) ;
+        }
+    }
+    .circle {
+        
+        animation: moveToPosition 2s linear forwards, shakeCircle 0.8s ease-in-out infinite,glowEffect 0.8s ease-in-out infinite;
+    }
+    .div2{
+    margin-top: -350px;
+}
+.div3{
+    margin-left: 0px;
+    width:100%;
+    font-size:18px;
+    height:200px;
+    margin-top:70px;
+    padding:20px;
+}
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0 0 5px #E8BEAC; /* हल्का ग्लो */
+    }
+
+    50% {
+        box-shadow: 0 0 20px 10px #E8BEAC; /* तेज ग्लो */
+    }
+
+    100% {
+        box-shadow: 0 0 5px #E8BEAC; /* फिर से हल्का ग्लो */
+    }
+}
+.col-4{
+width:300px;
+}
+.h1{
+    justify-content: center;
+    text-align:center
+}
+}

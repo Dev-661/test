@@ -1,0 +1,30 @@
+.navbar{
+    width:100%;
+}
+.col-4 {
+   
+    margin-top: 162px; /* Set the final margin-top */
+    width: 25%;
+    height: 298px;
+    overflow: hidden;
+    position: absolute; /* Absolute positioning to control movement */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    animation: moveToPosition 2s ease-out forwards;/* 3 seconds, ease-out for smoothness */
+}
+
+@keyframes moveToPosition {
+0% {
+    top:162px;
+    left: 100%; /* Start the element off-screen on the right */
+}
+100% {
+    top:162px;
+    left: 1100px; /* Move it to margin-left of 500px */
+}
+} 
+
+
+
+
+
